@@ -1,10 +1,6 @@
 //
 //  AppDelegate.swift
-//  WaniKaniNotifier
-//
-//  Created by Bulkan Evcimen on 20/3/20.
-//  Copyright © 2020 Bulkan Evcimen. All rights reserved.
-//
+
 
 import Cocoa
 import SwiftUI
@@ -12,22 +8,29 @@ import SwiftUI
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var window: NSWindow!
+//    @IBOutlet weak var menu: NSMenu?
+//    @IBOutlet weak var firstMenuItem: NSMenuItem?
+    var statusItem: NSStatusItem?
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
 
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
-
-        // Create the window and set the content view. 
-        window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-            backing: .buffered, defer: false)
-        window.center()
-        window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
-        window.makeKeyAndOrderFront(nil)
+         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+         statusItem?.button?.title = "WaniKani Notifier"
+         
+         let itemImage = NSImage(named: "wk")
+         itemImage?.isTemplate = true
+         statusItem?.button?.image = itemImage
+         
+//         if let menu = menu {
+//             statusItem?.menu = menu
+//             menu.delegate = self
+//         }
+//
+//         if let item = firstMenuItem {
+//             dateTimeView = DateTimeView(frame: NSRect(x: 0.0, y: 0.0, width: 250.0, height: 170.0))
+//             item.view = dateTimeView
+//         }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
