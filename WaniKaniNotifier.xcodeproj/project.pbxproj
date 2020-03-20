@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		25B0F0962424C0AB00064FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0F0952424C0AB00064FF7 /* AppDelegate.swift */; };
-		25B0F0982424C0AB00064FF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0F0972424C0AB00064FF7 /* ContentView.swift */; };
 		25B0F09A2424C0AC00064FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B0F0992424C0AC00064FF7 /* Assets.xcassets */; };
 		25B0F09D2424C0AC00064FF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B0F09C2424C0AC00064FF7 /* Preview Assets.xcassets */; };
 		25B0F0A02424C0AC00064FF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B0F09E2424C0AC00064FF7 /* Main.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		25B0F0922424C0AB00064FF7 /* WaniKaniNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaniKaniNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B0F0952424C0AB00064FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25B0F0972424C0AB00064FF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		25B0F0992424C0AC00064FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25B0F09C2424C0AC00064FF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25B0F09F2424C0AC00064FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				25B0F0952424C0AB00064FF7 /* AppDelegate.swift */,
-				25B0F0972424C0AB00064FF7 /* ContentView.swift */,
 				25B0F0992424C0AC00064FF7 /* Assets.xcassets */,
 				25B0F09E2424C0AC00064FF7 /* Main.storyboard */,
 				25B0F0A12424C0AC00064FF7 /* Info.plist */,
@@ -266,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25B0F0982424C0AB00064FF7 /* ContentView.swift in Sources */,
 				25B0F0962424C0AB00064FF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
