@@ -14,7 +14,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="WaniKaniNotifier" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="Test" id="3TF-UJ-Zr0">
+                                        <menuItem title="CustomViewWillGoHere" id="3TF-UJ-Zr0">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="L1T-sc-mLR"/>
@@ -25,7 +25,11 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                            <connections>
+                                                <action selector="showPreferences:" target="Voe-Tx-rLC" id="0yL-Cr-VHB"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Quit WaniKaniNotifier" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
@@ -42,15 +46,23 @@
                     </connections>
                 </application>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WaniKaniNotifier" customModuleProvider="target">
                     <connections>
                         <outlet property="firstMenuItem" destination="3TF-UJ-Zr0" id="7e5-fq-hnB"/>
                         <outlet property="menu" destination="uQy-DD-JDr" id="bL7-cF-Xt4"/>
                     </connections>
                 </customObject>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="-2" y="-1000"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DbX-An-W9p">
+            <objects>
+                <customObject id="1K9-Xg-Hp6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="preferencesID" id="dnw-DE-DtW" customClass="ViewController" customModule="WaniKaniNotifier" customModuleProvider="target" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="-238"/>
         </scene>
     </scenes>
 </document>

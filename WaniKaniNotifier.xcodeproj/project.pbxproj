@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257D2975242768E10080D58F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D2974242768E10080D58F /* ViewController.swift */; };
+		257D2978242783760080D58F /* Preferences in Frameworks */ = {isa = PBXBuildFile; productRef = 257D2977242783760080D58F /* Preferences */; };
+		257D297A242783B50080D58F /* GeneralPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D2979242783B50080D58F /* GeneralPreferenceViewController.swift */; };
+		257D297C242785150080D58F /* GeneralPreferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257D297B242785150080D58F /* GeneralPreferenceViewController.xib */; };
 		25B0F0962424C0AB00064FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0F0952424C0AB00064FF7 /* AppDelegate.swift */; };
 		25B0F09A2424C0AC00064FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B0F0992424C0AC00064FF7 /* Assets.xcassets */; };
 		25B0F09D2424C0AC00064FF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B0F09C2424C0AC00064FF7 /* Preview Assets.xcassets */; };
@@ -33,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		257D2974242768E10080D58F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		257D2979242783B50080D58F /* GeneralPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferenceViewController.swift; sourceTree = "<group>"; };
+		257D297B242785150080D58F /* GeneralPreferenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralPreferenceViewController.xib; sourceTree = "<group>"; };
 		25B0F0922424C0AB00064FF7 /* WaniKaniNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaniKaniNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B0F0952424C0AB00064FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25B0F0992424C0AC00064FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257D2978242783760080D58F /* Preferences in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,11 +105,14 @@
 			isa = PBXGroup;
 			children = (
 				25B0F0952424C0AB00064FF7 /* AppDelegate.swift */,
+				257D2974242768E10080D58F /* ViewController.swift */,
 				25B0F0992424C0AC00064FF7 /* Assets.xcassets */,
 				25B0F09E2424C0AC00064FF7 /* Main.storyboard */,
 				25B0F0A12424C0AC00064FF7 /* Info.plist */,
 				25B0F0A22424C0AC00064FF7 /* WaniKaniNotifier.entitlements */,
 				25B0F09B2424C0AC00064FF7 /* Preview Content */,
+				257D2979242783B50080D58F /* GeneralPreferenceViewController.swift */,
+				257D297B242785150080D58F /* GeneralPreferenceViewController.xib */,
 			);
 			path = WaniKaniNotifier;
 			sourceTree = "<group>";
@@ -148,6 +159,9 @@
 			dependencies = (
 			);
 			name = WaniKaniNotifier;
+			packageProductDependencies = (
+				257D2977242783760080D58F /* Preferences */,
+			);
 			productName = WaniKaniNotifier;
 			productReference = 25B0F0922424C0AB00064FF7 /* WaniKaniNotifier.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 25B0F0892424C0AB00064FF7;
+			packageReferences = (
+				257D2976242783760080D58F /* XCRemoteSwiftPackageReference "Preferences" */,
+			);
 			productRefGroup = 25B0F0932424C0AB00064FF7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -237,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25B0F0A02424C0AC00064FF7 /* Main.storyboard in Resources */,
+				257D297C242785150080D58F /* GeneralPreferenceViewController.xib in Resources */,
 				25B0F09D2424C0AC00064FF7 /* Preview Assets.xcassets in Resources */,
 				25B0F09A2424C0AC00064FF7 /* Assets.xcassets in Resources */,
 			);
@@ -264,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				25B0F0962424C0AB00064FF7 /* AppDelegate.swift in Sources */,
+				257D2975242768E10080D58F /* ViewController.swift in Sources */,
+				257D297A242783B50080D58F /* GeneralPreferenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +605,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		257D2976242783760080D58F /* XCRemoteSwiftPackageReference "Preferences" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Preferences";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		257D2977242783760080D58F /* Preferences */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 257D2976242783760080D58F /* XCRemoteSwiftPackageReference "Preferences" */;
+			productName = Preferences;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25B0F08A2424C0AB00064FF7 /* Project object */;
 }
